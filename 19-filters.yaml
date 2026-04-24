@@ -7,3 +7,7 @@
   - name: Filters
     ansible.builtin.debug:
       msg: "{{ Greetings | default('Good Morning')}}"
+  
+  - name: String to list
+    ansible.builtin.debug:
+      msg: "{{ Course | split(,) }}"
