@@ -41,7 +41,7 @@
 
   - name: set facts
     ansible.builtin.set_fact:
-      students_yaml: "{{ lookup ('file', students.yaml) | to_yaml }}"
+      students_yaml: "{{ lookup ('file', student.yaml) | to_yaml }}"
   
   - name: convert to json
     ansible.builtin.debug:
