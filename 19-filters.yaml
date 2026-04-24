@@ -7,6 +7,21 @@
       name: Meena
       course: Devops
       duration: 4
+    tagsList:  [
+        {
+            "key": "name",
+            "value": "Meena"
+        },
+        {
+            "key": "course",
+            "value": "Devops"
+        },
+        {
+            "key": "duration",
+            "value": 4
+        }
+    ]
+
   tasks:
   - name: Filters
     ansible.builtin.debug:
@@ -19,3 +34,7 @@
   - name: Map to list
     ansible.builtin.debug:
       msg: "{{ tagsMap | dict2items }}"
+
+  - name: list to map
+    ansible.builtin.debug:
+      msg: "{{ tagsList | items2dict }}"
