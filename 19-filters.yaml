@@ -1,0 +1,9 @@
+- name: Filters
+  hosts: local
+  connection: local
+  vars:
+    Course: Linux, Shell, Ansible
+  tasks:
+  - name: Filters
+    ansible.builtin.debug:
+      msg: "{{ Greetings | default('Good Morning')}}"
