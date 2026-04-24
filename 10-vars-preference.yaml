@@ -1,8 +1,8 @@
 - name: Checking vars preferences
   hosts: local
   connection: local
-  vars:
-    NAME: Vars from Playlevel
+  # vars:
+  #   NAME: Vars from Playlevel
   # vars_files:
   #   - course.yaml
   # vars_prompt:
