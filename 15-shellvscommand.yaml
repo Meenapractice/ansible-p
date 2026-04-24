@@ -3,5 +3,17 @@
   connection: local
   tasks:
   - name: shell
-    ansible.builtin.shell: cat /etc/passwd > users.txt
+    ansible.builtin.shell: cat /etc/passwd | grep root
     register: users_output
+
+  - name: shell
+    ansible.builtin.debug:
+      msg: "{{ users_output }}"
+
+  - name: shell
+    ansible.builtin.shell: ls -ltr > files
+    register: files_output
+
+  - name: shell
+    ansible.builtin.debug:
+      msg: "{{ files_output }}"
