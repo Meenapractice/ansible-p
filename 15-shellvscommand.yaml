@@ -1,0 +1,7 @@
+- name: shell vs command
+  hosts: local
+  connection: local
+  tasks:
+  - name: shell
+    ansible.builtin.shell: cat /etc/passwd > users.txt
+    register: users_output
