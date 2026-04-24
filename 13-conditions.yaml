@@ -1,0 +1,10 @@
+- name: Number of sessions
+  hosts: local
+  connection: local
+  vars:
+    NO_OF_SESSIONS: 7
+  tasks:
+  - name: No of sessions for ansible is more than 5
+    ansible.builtin.debug:
+      msg: "Ansible has more than 5  classes"
+    when: NO_OF_SESSIONS > 5
