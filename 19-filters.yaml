@@ -45,6 +45,6 @@
   
   - name: convert to json
     ansible.builtin.debug:
-      msg: "{{ students_yaml | nice_to_json }}"
+      msg: "{{ students_yaml | to_nice_json }}"
 
   
