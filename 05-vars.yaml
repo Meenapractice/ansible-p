@@ -2,9 +2,9 @@
   hosts: local
   connection: local
   tasks:
-  - name: Printing task level variables
     vars:
       COURSE: Devops
       TRAINER: Meena
+  - name: Printing task level variables
     ansible.builtin.debug:
       msg: "Course is {{ COURSE }}"
