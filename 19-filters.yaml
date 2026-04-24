@@ -10,4 +10,4 @@
   
   - name: String to list
     ansible.builtin.debug:
-      msg: "{{ Course | split( , ) }}"
+      msg: "{{ Course | split(',') }}"
