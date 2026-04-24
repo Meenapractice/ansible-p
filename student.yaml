@@ -1,0 +1,18 @@
+- student: Ramesh
+  name: adi
+  class: 5
+  address:
+  - name: sri apartm
+    flat no: 5
+  - name: sai enclave
+    flat no: 8
+
+- student: Rajesh
+  name: adi
+  class: 8
+  address:
+  - name: skanda apartm
+    flat no: 9
+  - name: shakti enclave
+    flat no: 5
+
