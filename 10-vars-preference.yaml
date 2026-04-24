@@ -15,3 +15,5 @@
     #   NAME: Vars fron task level
     ansible.builtin.debug:
       msg: "Name is {{ NAME }}"
+
+      # args, task, file, prompt, play, inventory
