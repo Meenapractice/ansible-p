@@ -3,6 +3,10 @@
   connection: local
   vars:
     Course: Linux, Shell, Ansible
+    tagsMap:
+      name: Meena
+      course: Devops
+      duration: 4
   tasks:
   - name: Filters
     ansible.builtin.debug:
@@ -11,3 +15,7 @@
   - name: String to list
     ansible.builtin.debug:
       msg: "{{ Course | split(',') }}"
+
+  - name: Map to list
+    ansible.builtin.debug:
+      msg: "{{ tagsMap | dict2items }}"
