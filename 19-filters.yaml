@@ -4,7 +4,7 @@
   vars:
     Course: Linux, Shell, Ansible
     name: "Devops with Ansible"
-    ipv4: 256.340.567.400
+    ipv4: 192.20.30.40
     tagsMap:
       name: Meena
       course: Devops
