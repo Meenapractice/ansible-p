@@ -3,6 +3,8 @@
   connection: local
   vars:
     Course: Linux, Shell, Ansible
+    name: "Devops with Ansible"
+    ipv4: 256.340.567.400
     tagsMap:
       name: Meena
       course: Devops
@@ -47,4 +49,17 @@
     ansible.builtin.debug:
       msg: "{{ students_yaml | to_nice_json }}"
 
+  - name: lower to upper
+    ansible.builtin.debug:
+      msg: "{{ name | upper }}"
+
+  - name: upper to lower
+    ansible.builtin.debug:
+      msg: "{{ name | lower }}"
+
+  - name: correct ipv4
+    ansible.builtin.debug:
+      msg: "{{ ipv4 | myipv4 }}"
+
+  
   
