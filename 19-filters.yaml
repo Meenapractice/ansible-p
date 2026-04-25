@@ -59,7 +59,7 @@
 
   - name: correct ipv4
     ansible.builtin.debug:
-      msg: "{{ ipv4 | myipv4 }}"
+      msg: "{{ ipv4 | ansible.utils.ipv4 }}"
 
   
   
