@@ -1,0 +1,8 @@
+- name: checking idempotency
+  hosts: local
+  become: yes
+  connection: local
+  tasks:
+  - name: adding the user
+    ansible.builtin.user:
+      name: Meena
